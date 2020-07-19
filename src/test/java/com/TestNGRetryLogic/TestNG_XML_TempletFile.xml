@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="RetryFailedTestsuit" verbose="5">
+	<listeners>
+			<listener class-name="com.TestNGRetryLogic.MyTransformer"/>
+	</listeners>
+	
+	<test name="RetryMultipleFailedTestCases">
+	<classes>
+			<class name="com.TestNGRetryLogic.MyTest"/>
+	</classes>
+		
+	</test>
+
+</suite>

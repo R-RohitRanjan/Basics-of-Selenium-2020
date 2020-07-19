@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Fundamentals Test Automation suit" verbose="5">
+	
+	<test name="Different testNG Feature Test">
+	
+		<parameter name="environment" value="QE"/>
+		<parameter name="browser" value="Chrome"/>
+		<parameter name="URL" value="https://login.yahoo.com/"/>
+		<parameter name="emailId" value="rohitranjan@yahoo.com"/>
+		
+		<classes>
+			<?class name="com.basicsofselenium.testng_framework.TestNGFundamentals"/>
+			<class name="com.basicsofselenium.testng_framework.GoogleHomePageTest"/>
+			<class name="com.basicsofselenium.testng_framework.TestNGFeatures"/>
+			<class name="com.basicsofselenium.testng_framework.InvocationCountTest"/>
+			<class name="com.basicsofselenium.testng_framework.GoogleHomePageValidationTest"/>
+			<class name="com.basicsofselenium.testng_framework.ExceptionTimeOutTest"/?>
+			<class name="com.basicsofselenium.testng_framework.ParameterTest"/>
+		</classes>
+		
+	</test>
+
+</suite>
